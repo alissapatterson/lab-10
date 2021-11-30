@@ -1,0 +1,40 @@
+---
+title: "lab 9"
+author: "Alissa Patterson"
+date: "11/30/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library("beepr")
+library("praise")
+library("cowsay")
+library("sf")
+library("paletteer")
+library("sf")
+library("usethis")
+library("janitor")
+library("here")
+library("tidyverse")
+```
+
+## beepr beeps
+
+use the function beep() in the bepr backage to make an audio alert when your code is done running
+```{r, eval=FALSE}
+for(i in rev(seq(1:999))) {
+  print(paste(i, "bottle of beer on the wall"))
+}
+beep(4)
+```
+
+## praise and cowsay
+packages built with purpose to be kind and fun
+
+```{r}
+praise("${Exclamation}, ${EXCLAMATION}!!!!")
+```
+
+Use cowsay::say() to make a character say somethihng to you
+
